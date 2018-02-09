@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>API Tutorial</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
@@ -45,6 +45,27 @@
 				<section>
 					<section>
 						<h1>API Anatomy</h1>
+						<p>Request / Response</p>
+					</section>
+					<section>
+						<h1>Request</h1>
+						<ul>
+							<li>http method</li>
+							<li>url</li>
+							<li>port</li>
+							<li>headers</li>
+							<li>body</li>
+						</ul>
+					</section>
+					<section>
+						<pre style="font-size:25px; text-align:left; padding:0; margin:0">
+curl -X "PUT" "https://api.dev.f1.flexdrive.com:443/mobile/v2/profile" \
+     -H 'Authorization: jU6VhGZNQzq4aUi8QVmhGmbw7Fw2Cjsd5h_IBOhMMEc' \
+     -H 'Content-Type: application/json; charset=utf-8' \
+     -d $'{
+  "email": "gil@mm.com"
+}'
+	 					</pre>
 					</section>
 					<section>
 						<h1>Headers</h1>
