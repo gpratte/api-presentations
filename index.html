@@ -50,7 +50,8 @@
 					<section>
 						<h1>Request</h1>
 						<ul>
-							<li>http method</li>
+							<li>http method (verb)</li>
+							<li>protocol (http or https)</li>
 							<li>url</li>
 							<li>port</li>
 							<li>headers</li>
@@ -58,21 +59,58 @@
 						</ul>
 					</section>
 					<section>
-						<pre style="font-size:25px; text-align:left; padding:0; margin:0">
-curl -X "PUT" "https://api.dev.f1.flexdrive.com:443/mobile/v2/profile" \
-     -H 'Authorization: jU6VhGZNQzq4aUi8QVmhGmbw7Fw2Cjsd5h_IBOhMMEc' \
-     -H 'Content-Type: application/json; charset=utf-8' \
-     -d $'{
-  "email": "gil@mm.com"
-}'
+						<pre style="font-size:45px; text-align:left; padding:0; margin:0">
+https://swapi.co/api/people/1/
 	 					</pre>
 					</section>
 					<section>
-						<h1>Headers</h1>
+						<pre style="font-size:45px; text-align:left; padding:0; margin:0">
+https://swapi.co/api/people/1/
+	 					</pre>
+						<ul>
+							<li>http method: GET</li>
+							<li>protocol: https</li>
+							<li>url: swapi.co/api/people/1/</li>
+							<li>port: 443</li>
+							<li>headers: browser supplied</li>
+							<li>body: none</li>
+						</ul>
 					</section>
 					<section>
-						<h1>Content type</h1>
+						<h1>Response</h1>
+						<ul>
+							<li>headers</li>
+							<ul>
+								<li>Content-Type</li>
+								<li>set-cookie</li>
+								<li>date</li>
+								<li>...</li>
+							</ul>
+							<li>content</li>
+						</ul>
 					</section>
+					<section>
+						<pre style="font-size:45px; text-align:left; padding:0; margin:0">
+https://swapi.co/api/people/1/
+	 					</pre>
+						<p>A look at chrome devtools shows</p>
+						<ul>
+							<li>headers</li>
+							<ul>
+								<li>Content-Type: text/html; charset=utf-8</li>
+								<li>set-cookie: cookie data</li>
+								<li>date: Tue, 13 Feb 2018 13:14:35 GMT</li>
+								<li>...</li>
+							</ul>
+							<li>content: html </li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<h1>Tools</h1>
+					<p>Browser (sessions and forms)</p>
+					<p class="fragment">cURL/PAW (RESTful APIs)</p>
 				</section>
 
 				<section>
@@ -85,6 +123,10 @@ curl -X "PUT" "https://api.dev.f1.flexdrive.com:443/mobile/v2/profile" \
 					<section>
 						<h1>POST</h1>
 					</section>
+				</section>
+
+				<section>
+					<h1>RESTful</h1>
 				</section>
 
 				<section>
