@@ -29,7 +29,7 @@
 					<p>By the end of this tutorial you will</p>
 					<ul>
 						<li>Understand the anatomy of an API</li>
-						<li>Invoke APIs using a broswer, cURL and PAW</li>
+						<li>Invoke APIs using a broswer, cURL PAW and Postman</li>
 					</ul>
 				</section>
 				<section>
@@ -60,9 +60,10 @@
 					</section>
 					<section>
 						<h1>Example</h1>
-						<pre style="font-size:45px; text-align:left; padding:0; margin:0">
-https://swapi.co/api/people/1/
-	 					</pre>
+							<a href="https://swapi.co/api/people/1/">https://swapi.co/api/people/1/</a>
+						<aside class="notes">
+							Bring up api in chrome and show dev tools network
+						</aside>
 					</section>
 					<section>
 						<pre style="font-size:45px; text-align:left; padding:0; margin:0">
@@ -115,20 +116,42 @@ https://swapi.co/api/people/1/
 				</section>
 
 				<section>
-					<h1>Tools</h1>
-					<p>Browser (sessions and forms)</p>
-					<p class="fragment">cURL/PAW (RESTful APIs)</p>
-				</section>
-
-				<section>
 					<section>
 						<h1>BROWSER</h1>
+						<p>Sessions and forms</p>
+					</section>
+					<section>
+						<h1>Only GET and POST</h1>
+						<p>Without the aid of javascript browsers can only
+						GET and POST</p>
 					</section>
 					<section>
 						<h1>GET</h1>
+						<p>A GET is performed when you click on a link or type a
+						   url in the address.</p>
 					</section>
 					<section>
 						<h1>POST</h1>
+						<p>A POST is performed when you submit a form.</p>
+						<pre><code class="hljs" data-trim contenteditable>
+<form action="http://example/com" method="POST">
+	Email: <input type="text" name="email">
+	<br>
+	Password: <input type="password" name="password">
+	<br>
+	<input type="submit">
+</form>
+</code></pre>
+					</section>
+					<section>
+						<h1>POST - Login</h1>
+						<form action="http://example/com" method="POST">
+							Email: <input type="text" name="email">
+							<br>
+							Password: <input type="password" name="password">
+							<br>
+							<input type="submit">
+						</form>
 					</section>
 				</section>
 
